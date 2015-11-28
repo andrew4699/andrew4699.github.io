@@ -63,7 +63,7 @@ int animationStart;
 
 public static void main(String args[])
 {
-    PApplet.main("TicTacToe");
+	PApplet.main("TicTacToe");
 }
 
 public void setup()
@@ -76,17 +76,17 @@ public void setup()
 	aiDifficulty = AI_NONE;
 	
 	for(int i = 0; i < 3; i++)
-    {
-        for(int j = 0; j < 3; j++)
-        {
-            boardPieces[i][j] = ' ';
-        }
-    }
+	{
+		for(int j = 0; j < 3; j++)
+		{
+			boardPieces[i][j] = ' ';
+		}
+	}
 }
 
 public void draw()
 {
- 	background(47, 47, 47);
+	background(47, 47, 47);
 	
 	fill(255, 255, 255);
 	
@@ -131,29 +131,29 @@ public void draw()
 	}
 	else if(gameState == GAME_STATE_PLAYING || gameState == GAME_STATE_FINISHING)
 	{	
-    	textSize(24);
-    	
-    	text("Player " + playersTurn + "'s Turn", PIECE_SPACING, 25);
-    	
-    	textSize(64);
-    	
-        for(int rowIndex = 0; rowIndex < 3; rowIndex++)
-        {
-            for(int columnIndex = 0; columnIndex < 3; columnIndex++)
-            {
-            	int[] tilePosition = getTilePosition(rowIndex, columnIndex);
-    			
-    			fill(255, 255, 255);
-                rect(tilePosition[0], tilePosition[1], PIECE_WIDTH, PIECE_HEIGHT);
-                
-                fill(0, 0, 0);
-                text(boardPieces[rowIndex][columnIndex], tilePosition[0] + (PIECE_TEXT_SIZE / 2), tilePosition[1] + PIECE_TEXT_SIZE + 5);
-            }
-        }
-        
-        if(gameState == GAME_STATE_FINISHING)
-        {
-        	stroke(255, 0, 0);
+		textSize(24);
+		
+		text("Player " + playersTurn + "'s Turn", PIECE_SPACING, 25);
+		
+		textSize(64);
+		
+		for(int rowIndex = 0; rowIndex < 3; rowIndex++)
+		{
+			for(int columnIndex = 0; columnIndex < 3; columnIndex++)
+			{
+				int[] tilePosition = getTilePosition(rowIndex, columnIndex);
+				
+				fill(255, 255, 255);
+				rect(tilePosition[0], tilePosition[1], PIECE_WIDTH, PIECE_HEIGHT);
+				
+				fill(0, 0, 0);
+				text(boardPieces[rowIndex][columnIndex], tilePosition[0] + (PIECE_TEXT_SIZE / 2), tilePosition[1] + PIECE_TEXT_SIZE + 5);
+			}
+		}
+		
+		if(gameState == GAME_STATE_FINISHING)
+		{
+			stroke(255, 0, 0);
 			strokeWeight(10);
 			
 			int[][] winningEndpoints = getWinningEndpoints();
@@ -179,11 +179,11 @@ public void draw()
 					(int)(startTilePosition[1] + (difference[1] * ratio))
 				);
 			
-        	if(millis() > animationStart + ANIMATION_TIME + ANIMATION_BUFFER)
-        	{
-        		gameState = GAME_STATE_FINISHED;
-        	}
-        }
+			if(millis() > animationStart + ANIMATION_TIME + ANIMATION_BUFFER)
+			{
+				gameState = GAME_STATE_FINISHED;
+			}
+		}
 	}
 	else if(gameState == GAME_STATE_FINISHED)
 	{
@@ -237,12 +237,12 @@ public void mousePressed()
 	}
 	else if(gameState == GAME_STATE_PLAYING)
 	{
-    	int selectedTile[] = getSelectedTile();
-    	
-    	if(selectedTile[0] != -1)
-    	{
-    		placePiece(selectedTile);
-    	}
+		int selectedTile[] = getSelectedTile();
+		
+		if(selectedTile[0] != -1)
+		{
+			placePiece(selectedTile);
+		}
 	}
 	else if(gameState == GAME_STATE_FINISHED)
 	{
@@ -275,19 +275,19 @@ private void placePiece(int[] tile)
 			}
 			else
 			{
-	    		if(playersTurn == PLAYER_ONE)
-	    		{
-	    			playersTurn = PLAYER_TWO;
-	    			
-	    			if(aiDifficulty != AI_NONE)
-	    			{
-	    				processAIMove();
-	    			}
-	    		}
-	    		else
-	    		{
-	    			playersTurn = PLAYER_ONE;
-	    		}
+				if(playersTurn == PLAYER_ONE)
+				{
+					playersTurn = PLAYER_TWO;
+					
+					if(aiDifficulty != AI_NONE)
+					{
+						processAIMove();
+					}
+				}
+				else
+				{
+					playersTurn = PLAYER_ONE;
+				}
 			}
 		}
 	}
@@ -330,20 +330,20 @@ private void processAIMove()
 		else
 		{
 			boolean duplicate = false;
-    		
-    		do
-    		{
-    			duplicate = false;
-    			
-    			selectedTile[0] = (int)(Math.random() * 3);
-    			selectedTile[1] = (int)(Math.random() * 3);
-    			
-    			if(boardPieces[selectedTile[0]][selectedTile[1]] != ' ')
-    			{
-    				duplicate = true;
-    			}
-    		}
-    		while(duplicate);
+			
+			do
+			{
+				duplicate = false;
+				
+				selectedTile[0] = (int)(Math.random() * 3);
+				selectedTile[1] = (int)(Math.random() * 3);
+				
+				if(boardPieces[selectedTile[0]][selectedTile[1]] != ' ')
+				{
+					duplicate = true;
+				}
+			}
+			while(duplicate);
 		}
 	}
 	else if(aiDifficulty == AI_DIFFICULTY_HARD)
@@ -367,12 +367,12 @@ private int[] getSelectedTile()
 		{
 			if(boardPieces[rowIndex][columnIndex] == ' ')
 			{
-    			int[] tilePosition = getTilePosition(rowIndex, columnIndex);
-    			
-    			if(isMouseWithinRectangle(tilePosition[0], tilePosition[1], PIECE_WIDTH, PIECE_HEIGHT))
-    			{
-    				return new int[] {rowIndex, columnIndex};
-    			}
+				int[] tilePosition = getTilePosition(rowIndex, columnIndex);
+				
+				if(isMouseWithinRectangle(tilePosition[0], tilePosition[1], PIECE_WIDTH, PIECE_HEIGHT))
+				{
+					return new int[] {rowIndex, columnIndex};
+				}
 			}
 		}
 	}
@@ -392,10 +392,10 @@ private int getWinner(char[][] board)
 			{
 				if((columnIndex == 0 && ((currentPiece == board[rowIndex][columnIndex + 1] && currentPiece == board[rowIndex][columnIndex + 2]) || (rowIndex == 0 && currentPiece == board[rowIndex + 1][columnIndex + 1] && currentPiece == board[rowIndex + 2][columnIndex + 2]) || (rowIndex == 2 && currentPiece == board[rowIndex - 1][columnIndex + 1] && currentPiece == board[rowIndex - 2][columnIndex + 2])))
 				|| (rowIndex == 0 && currentPiece == board[rowIndex + 1][columnIndex] && currentPiece == board[rowIndex + 2][columnIndex]))
-    			{
+				{
 					if(currentPiece == 'X') return PLAYER_ONE;
 					else return PLAYER_TWO;
-    			}
+				}
 			}
 		}
 	}
