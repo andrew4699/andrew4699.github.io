@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>Cannonball Simulator</title>
+
+		<script src='http://code.jquery.com/jquery-2.2.0.min.js'></script>
+		<script src='jquery-ui.min.js'></script>
+
+		<script src='cannonball.js'></script>
+
+		<style>
+			body
+			{
+				margin: 0;
+			}
+
+			#ground
+			{
+				position: absolute;
+				bottom: 0px;
+
+				background: black;
+		
+				width: 100%;
+				height: 100px;
+			}
+
+			#ball
+			{
+				position: absolute;
+				bottom: 100px;
+
+				border-radius: 16px;
+
+				background: black;
+
+				width: 32px;
+				height: 32px;
+			}
+
+			#form
+			{
+				margin-left: 5px;
+				margin-top: 5px;
+			}
+
+			#form > input, #form > button
+			{
+				padding: 3px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id='form'>
+			<input type='text' id='velocity' placeholder='Initial Velocity'>
+			<input type='text' id='angle' placeholder='Angle'>
+			<input type='text' id='xPosition' placeholder='X Position'>
+			<input type='text' id='interval' placeholder='Interval'>
+			<button id='fireBall'>Shoot</button>
+		</div>
+
+		<div id='ball'></div>
+		<div id='ground'></div>
+	</body>
+</html>
