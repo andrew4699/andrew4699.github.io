@@ -1,0 +1,49 @@
+.formBlocked > input, .formBlocked > textarea, .formBlocked > button
+{
+	display: block;
+
+	width: 100%;
+}
+
+.formBlocked > input:not(:last-child), .formBlocked > textarea:not(:last-child), .formBlocked > button:not(:last-child)
+{
+	margin-bottom: 10px;
+}
+
+input, textarea, button
+{
+	border: none;
+
+	font: normal 16px 'Roboto', sans-serif;
+	color: #424242;
+
+	padding: 10px;
+}
+
+textarea
+{
+	height: 300px;
+
+	resize: none;
+}
+
+button
+{
+	background: #272727;
+
+	color: white;
+
+	padding: 15px 10px;
+}
+
+button:hover
+{
+	background: #373737;
+
+	cursor: pointer;
+}
+
+button:active
+{
+	background: #171717;
+}

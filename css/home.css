@@ -1,0 +1,69 @@
+.homeFirst
+{
+	background: url(../images/home.png);
+
+	color: white;
+
+	height: 100vh;
+
+	padding-top: 10%;
+}
+
+.homeHeader
+{
+	font-size: 60px;
+	font-weight: 100;
+}
+
+.homeSubHeader
+{
+	text-transform: uppercase;
+	font-size: 28px;
+	color: gray;
+
+	margin-bottom: 100px;
+}
+
+.homeStatement
+{
+	text-align: left;
+	font: normal 24px 'Questrial', sans-serif;
+
+	line-height: 1.25;
+
+	margin-bottom: 100px;
+}
+
+#homeScroll
+{
+	position: absolute;
+	left: calc(50% - 32px);
+	bottom: 0px;
+
+	font-size: 64px;
+}
+
+#homeScroll:hover
+{
+	cursor: pointer;
+}
+
+.homeSecond
+{
+	background: #F2F2F2;
+
+	min-height: 100vh;
+
+	padding-top: 5%;
+}
+
+.homeThird
+{
+	background: #2578CF;
+
+	color: white;
+
+	min-height: 100vh;
+
+	padding-top: 5%;
+}

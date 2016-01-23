@@ -1,0 +1,378 @@
+.formBlocked > input, .formBlocked > textarea, .formBlocked > button
+{
+	display: block;
+
+	width: 100%;
+}
+
+.formBlocked > input:not(:last-child), .formBlocked > textarea:not(:last-child), .formBlocked > button:not(:last-child)
+{
+	margin-bottom: 10px;
+}
+
+input, textarea, button
+{
+	border: none;
+
+	font: normal 16px 'Roboto', sans-serif;
+	color: #424242;
+
+	padding: 10px;
+}
+
+textarea
+{
+	height: 300px;
+
+	resize: none;
+}
+
+button
+{
+	background: #272727;
+
+	color: white;
+
+	padding: 15px 10px;
+}
+
+button:hover
+{
+	background: #373737;
+
+	cursor: pointer;
+}
+
+button:active
+{
+	background: #171717;
+}#galleryPhotos > a
+{
+	display: inline-block;
+
+	border: 1px solid lightgray;
+
+	width: calc(49% - 10px);
+	height: 300px;
+
+	padding: 3px;
+	margin-bottom: 10px;
+
+	overflow: hidden;
+}
+
+#galleryPhotos > a:not(:nth-child(3n))
+{
+	margin-right: 10px;
+}
+
+#galleryPhotos > a > div
+{
+	position: relative;
+
+	background: url() no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+
+	height: 100%;
+}
+
+.galleryPhotoCaption
+{
+	position: absolute;
+	bottom: 0px;
+
+	background: rgba(0, 0, 0, 0.45);
+
+	color: white;
+
+	width: 100%;
+	height: 40px;
+
+	padding-top: 5px;
+}
+
+.galleryPhotoCaption > .subtitle
+{
+	text-align: left;
+
+	padding: 0px 20px;
+}body
+{
+	background: white;
+
+	font: normal 14px 'Roboto', sans-serif;
+
+	margin: 0px;
+}
+
+*, *:focus
+{
+	outline: none;
+
+	box-sizing: border-box;
+}
+
+a
+{
+	text-decoration: none;
+	color: gray;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+.wrapper
+{
+	text-align: center;
+
+	width: 60%;
+
+	margin: 0px auto;
+}
+
+.wrapper-large
+{
+	width: 75%;
+}
+
+.wrapper-small
+{
+	width: 30%;
+}
+
+.hideit
+{
+	display: none;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+
+.italic
+{
+	font-style: italic;
+}
+
+.underline
+{
+	text-decoration: underline;
+}
+
+.icon
+{
+	font-family: FontAwesome;
+}
+
+.center
+{
+	text-align: center;
+}
+
+.left
+{
+	text-align: left;
+}
+
+.right
+{
+	text-align: right;
+}
+
+.justify
+{
+	text-align: justify;
+}
+
+.noselect
+{
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.space-right
+{
+	margin-right: 10px;
+}
+
+.space-bottom
+{
+	margin-bottom: 10px;
+}
+
+.title
+{
+	font: normal 24px 'Roboto', sans-serif;
+	font-weight: 100;
+}
+
+.subtitle
+{
+	font: normal 12px 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+.floatRight
+{
+	float: right;
+}
+
+.floatLeft
+{
+	float: left;
+}
+
+.inlineBlock
+{
+	display: inline-block;
+}.homeFirst
+{
+	background: url(../images/home.png);
+
+	color: white;
+
+	height: 100vh;
+
+	padding-top: 10%;
+}
+
+.homeHeader
+{
+	font-size: 60px;
+	font-weight: 100;
+}
+
+.homeSubHeader
+{
+	text-transform: uppercase;
+	font-size: 28px;
+	color: gray;
+
+	margin-bottom: 100px;
+}
+
+.homeStatement
+{
+	text-align: left;
+	font: normal 24px 'Questrial', sans-serif;
+
+	line-height: 1.25;
+
+	margin-bottom: 100px;
+}
+
+#homeScroll
+{
+	position: absolute;
+	left: calc(50% - 32px);
+	bottom: 0px;
+
+	font-size: 64px;
+}
+
+#homeScroll:hover
+{
+	cursor: pointer;
+}
+
+.homeSecond
+{
+	background: #F2F2F2;
+
+	min-height: 100vh;
+
+	padding-top: 5%;
+}
+
+.homeThird
+{
+	background: #2578CF;
+
+	color: white;
+
+	min-height: 100vh;
+
+	padding-top: 5%;
+}#navigationBar
+{
+	position: fixed;
+
+	background: #070707;
+
+	text-align: right;
+	color: white;
+
+	width: 100%;
+
+	padding: 15px;
+
+	z-index: 99999;
+}
+
+.navigationLogo > div
+{
+	display: inline-block;
+}
+
+.navigationLogo > div:first-child
+{
+	border: 2px solid #2578CF;
+
+	border-radius: 20px;
+
+	font-size: 18px;
+
+	width: 40px;
+	height: 40px;
+
+	padding-top: 7px;
+	margin-right: 5px;
+}
+
+.navigationLogo > div:nth-child(2)
+{
+	text-align: left;
+	font-size: 18px;
+
+	vertical-align: middle;
+}
+
+.navigationLogo > div:nth-child(2) > div
+{
+	text-transform: uppercase;
+	font-size: 12px;
+	color: gray;
+}
+
+.navigationItems > div
+{
+	display: inline-block;
+
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+
+	padding: 5px 3px 10px;
+
+	margin-right: 30px;
+}
+
+.navigationItems > div:last-child
+{
+	margin-right: 0px;
+}
+
+.navigationItems > div:hover
+{
+	cursor: pointer;
+}
+
+.navigationCurrent
+{
+	border-bottom: 3px solid #676767;
+}

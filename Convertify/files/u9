@@ -1,0 +1,5 @@
+	CreateVehicle(407, 1390.7998000, -1684.3000500, 13.9000000, 90.0000000, 177, -1, 600);
+	CreateObject(1696, -2073.5, -123.7, 51.9, 0, 0, 38, 300); // object (roofstuff15) (1)
+
+	RemoveBuildingForPlayer(playerid, 11015, -2028.13281, -111.27344, 36.13281, 19.986207962036);
+	RemoveBuildingForPlayer(playerid, 11371, -2028.13281, -111.27344, 36.13281, 19.986207962036); //removeWorldObject (drivingschoolex_SFS) (1)

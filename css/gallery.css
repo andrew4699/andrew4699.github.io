@@ -1,0 +1,52 @@
+#galleryPhotos > a
+{
+	display: inline-block;
+
+	border: 1px solid lightgray;
+
+	width: calc(49% - 10px);
+	height: 300px;
+
+	padding: 3px;
+	margin-bottom: 10px;
+
+	overflow: hidden;
+}
+
+#galleryPhotos > a:not(:nth-child(3n))
+{
+	margin-right: 10px;
+}
+
+#galleryPhotos > a > div
+{
+	position: relative;
+
+	background: url() no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+
+	height: 100%;
+}
+
+.galleryPhotoCaption
+{
+	position: absolute;
+	bottom: 0px;
+
+	background: rgba(0, 0, 0, 0.45);
+
+	color: white;
+
+	width: 100%;
+	height: 40px;
+
+	padding-top: 5px;
+}
+
+.galleryPhotoCaption > .subtitle
+{
+	text-align: left;
+
+	padding: 0px 20px;
+}

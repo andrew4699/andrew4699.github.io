@@ -1,0 +1,134 @@
+body
+{
+	background: white;
+
+	font: normal 14px 'Roboto', sans-serif;
+
+	margin: 0px;
+}
+
+*, *:focus
+{
+	outline: none;
+
+	box-sizing: border-box;
+}
+
+a
+{
+	text-decoration: none;
+	color: gray;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+.wrapper
+{
+	text-align: center;
+
+	width: 60%;
+
+	margin: 0px auto;
+}
+
+.wrapper-large
+{
+	width: 75%;
+}
+
+.wrapper-small
+{
+	width: 30%;
+}
+
+.hideit
+{
+	display: none;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+
+.italic
+{
+	font-style: italic;
+}
+
+.underline
+{
+	text-decoration: underline;
+}
+
+.icon
+{
+	font-family: FontAwesome;
+}
+
+.center
+{
+	text-align: center;
+}
+
+.left
+{
+	text-align: left;
+}
+
+.right
+{
+	text-align: right;
+}
+
+.justify
+{
+	text-align: justify;
+}
+
+.noselect
+{
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.space-right
+{
+	margin-right: 10px;
+}
+
+.space-bottom
+{
+	margin-bottom: 10px;
+}
+
+.title
+{
+	font: normal 24px 'Roboto', sans-serif;
+	font-weight: 100;
+}
+
+.subtitle
+{
+	font: normal 12px 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+.floatRight
+{
+	float: right;
+}
+
+.floatLeft
+{
+	float: left;
+}
+
+.inlineBlock
+{
+	display: inline-block;
+}
