@@ -1,4 +1,4 @@
-#galleryPhotos > a
+#galleryPhotos > div
 {
 	display: inline-block;
 
@@ -13,12 +13,12 @@
 	overflow: hidden;
 }
 
-#galleryPhotos > a:not(:nth-child(3n))
+#galleryPhotos > div:not(:nth-child(2n))
 {
 	margin-right: 10px;
 }
 
-#galleryPhotos > a > div
+#galleryPhotos > div > div
 {
 	position: relative;
 
@@ -49,4 +49,75 @@
 	text-align: left;
 
 	padding: 0px 20px;
+}
+
+#galleryOverlay
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+
+	background: #171717;
+
+	text-align: left;
+	color: white;
+
+	width: 100%;
+	height: 100%;
+
+	padding: 50px 10%;
+	padding-bottom: 0px;
+
+	margin: auto;
+
+	z-index: 600;
+}
+
+#galleryOverlayPicture
+{
+	display: block;
+
+	width: 100%;
+	height: 80%;
+
+	margin-bottom: 10px;
+}
+
+#galleryOverlayClose
+{
+	position: fixed;
+	top: 10px;
+	right: 20px;
+
+	font-weight: 100;
+	font-size: 24px;
+	color: gray;
+}
+
+#galleryOverlayClose:hover
+{
+	cursor: pointer;
+}
+
+#galleryArrowLeft, #galleryArrowRight
+{
+	position: fixed;
+	top: calc(50% - 32px);
+
+	font-size: 64px;
+}
+
+#galleryArrowLeft:hover, #galleryArrowRight:hover
+{
+	cursor: pointer;
+}
+
+#galleryArrowLeft
+{
+	left: 50px;
+}
+
+#galleryArrowRight
+{
+	right: 50px;
 }

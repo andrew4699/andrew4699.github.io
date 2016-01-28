@@ -1,15 +1,5 @@
 $(document).ready(function()
 {
-	console.log("///////////////////////////////////////////////////////////");
-	console.log("//														 //");
-	console.log("//														 //");
-	console.log("//				WELCOME TO MY CONSOLE 					 //");
-	console.log("//														 //");
-	console.log("//														 //");
-	console.log("///////////////////////////////////////////////////////////");
-
-	// Navigation
-
 	function updateNavigation()
 	{
 		var scrollTop = $(this).scrollTop() + $('#navigationBar').height();
@@ -37,11 +27,6 @@ $(document).ready(function()
 	});
 
 	updateNavigation();
-
-	$('#homeScroll').click(function()
-	{
-		$('html, body').animate({scrollTop: $('#section-gallery').offset().top}, 750);
-	});
 
 	$('#navigationBar div').click(function()
 	{
