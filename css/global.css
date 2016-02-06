@@ -23,6 +23,8 @@ a
 a:hover
 {
 	text-decoration: underline;
+
+	cursor: pointer;
 }
 
 .wrapper
@@ -141,4 +143,9 @@ a:hover
 .verticalMiddle
 {
 	vertical-align: middle;
+}
+
+.specialHoverColor::selection
+{
+	background: #EBEBEB;
 }

@@ -12,4 +12,9 @@ $(document).ready(function()
 	{
 		$('html, body').animate({scrollTop: $('#section-gallery').offset().top}, 750);
 	});
+
+	$('#contactScroll').click(function()
+	{
+		$('html, body').animate({scrollTop: $('#section-contact').offset().top}, 750);
+	});
 });
