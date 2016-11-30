@@ -1,6 +1,7 @@
 .homeFirst
 {
-	background: url(../images/home.png);
+	background: url(../images/home.png) no-repeat;
+	background-size: cover;
 
 	color: white;
 
