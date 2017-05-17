@@ -211,6 +211,10 @@ button:active
 	height: 80%;
 
 	margin-bottom: 10px;
+
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
 }
 
 #galleryOverlayClose
@@ -250,6 +254,17 @@ button:active
 #galleryArrowRight
 {
 	right: 50px;
+}
+
+#galleryOverlayLink
+{
+	font-size: 14px;
+	color: #2578CF;
+}
+
+#galleryOverlayDescription
+{
+	font-weight: 300;
 }body
 {
 	background: white;
@@ -418,6 +433,23 @@ a:hover
 	font-weight: 100;
 }
 
+.homeHeader .highlight
+{
+	border: 1px solid transparent;
+
+	text-decoration: none;
+	color: lightgray;
+
+	padding: 3px 7px;
+}
+
+.homeHeader .highlight:hover
+{
+	border-color: lightgray;
+
+	cursor: pointer;
+}
+
 .homeSubHeader
 {
 	text-transform: uppercase;
@@ -435,6 +467,11 @@ a:hover
 	line-height: 1.25;
 
 	margin-bottom: 100px;
+}
+
+.homeStatement .highlight
+{
+	color: #BBBBBB;
 }
 
 #homeScroll
@@ -466,7 +503,7 @@ a:hover
 
 	color: white;
 
-	min-height: 100vh;
+	min-height: calc(100vh - 70px);
 
 	padding-top: 5%;
 }#navigationBar
@@ -525,10 +562,6 @@ a:hover
 .navigationItems > div
 {
 	display: inline-block;
-
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
 
 	padding: 5px 3px 10px;
 
